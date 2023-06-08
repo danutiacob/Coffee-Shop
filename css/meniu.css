@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../asset/home-1-parallax-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 100vh;
+}
+
+.meniu-title {
+    text-align: center;
+    color: white;
+}
+
+.meniu-title h1 {
+    font-size: 40px;
+}
+
+.meniu-subtitle h2 {
+    font-size: 30px;
+    margin-left: 60px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.meniu-flex {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.meniu h3 {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.meniu-flex .meniu {
+    width: 49%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.meniu .line {
+    margin-top: 10px;
+    border-top: 1px dotted #fff;
+    width: 42%;
+}
+
+/* Media Query */
+@media(max-width: 680px) {
+    .meniu-flex {
+        width: 90%;
+        margin: 0px auto;
+        display: flow-root;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .meniu-flex .meniu {
+        width: 90%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+}

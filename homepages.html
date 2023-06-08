@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="home.css">
+    <title>Coffee Shop</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+    <!-- Boostrap v5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!-- W3schools link -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <section class="bg-home d-flex justify-content-center align-items-center">
+        <!-- Navbar section with Bootstrap start -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="asset/logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active links" href="homepages.html"><b><i> Home </i></b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="#meniu"><b><i> Meniu </i></b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="#shop"><b><i> Shop </i></b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="#reviews"><b><i> Review </i></b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link links" href="#contact"><b><i> Contact </i></b></a>
+                        </li>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link active links btnLogin-popup" onclick="openPopup()" href="#"><b><i>
+                                            Reserve a Table </i></b></a>
+                            </li>
+
+                            <!-- ...popup card...start -->
+                            <div class="popup" id="popup">
+                                <h2 class="table-title active"><b><i><a data-page="reserve a table"> Reserve a Table
+                                            </a></i></b></h2>
+                                <hr>
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="input-box-name col-sm-6">
+                                            <input class="name" type="text" placeholder="full name">
+
+                                        </div>
+                                        <div class="input-box-email col-sm-6">
+                                            <span class="icon"> <ion-icon name="mail"></ion-icon> </span>
+                                            <input class="email" type="email" placeholder="Email">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-box-phone col-sm-6">
+                                            <span class="icon"> <ion-icon name="call"></ion-icon> </span>
+                                            <input class="phone" type="number" placeholder="Phone Number">
+
+                                        </div>
+                                        <div class="input-box-people col-sm-6">
+                                            <span class="icon"> <ion-icon name="people"></ion-icon> </span>
+                                            <input class="people" type="number" placeholder="Number of People">
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-box-date col-sm-6">
+                                            <input class="date" type="date" placeholder="Desired Date">
+
+                                        </div>
+                                        <div class="input-box-time col-sm-6">
+                                            <input class="time" type="time" placeholder="Desired Times">
+                                        </div>
+                                    </div>
+                                </form>
+                                <button class="send" type="button" onclick="closePopup()">Send</button>
+                                <!-- ...popup card...end -->
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar section with Bootstrap end -->
+        <!-- Home Section start -->
+        <div class="content">
+            <h1 data-aos="fade-right" data-aos-delay="500" data-aos-duration="2000"><b><i>Coffee Shop</i></b></h1>
+            <p data-aos="fade-down-left" data-aos-delay="600" data-aos-duration="1500"><b>Fresh coffee every morning</b>
+            </p>
+        </div>
+    </section>
+    <!-- Home Section end -->
+    <!-- Start Section for Meniu -->
+    <div class="bg-meniu" id="meniu">
+        <h1 class="title-meniu"> Meniu </h1>
+        <h3 class="subtitle-meniu" data-aos="fade-down-right">Time for a fresh Coffee</h3>
+        <!-- <div class="meniu-title">
+            <h3 class="subtitle-meniu" data-aos="fade-down-right">Time for a fresh Coffee</h3>
+        </div> -->
+        <div class="meniu-flex">
+            <div class="meniu1">
+                <div data-aos="flip-left" class="small-image">
+                    <img src="asset/cold brew.jpeg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Cold Brew</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">17.00 ron</h4>
+                </div>
+            </div>
+
+            <div class="meniu1">
+                <div data-aos="flip-left" class="small-image">
+                    <img src="asset/smoothie.jpg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Smoothie</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">15.00 ron</h4>
+                </div>
+            </div>
+
+            <div class="meniu1">
+                <div data-aos="flip-left" class="small-image">
+                    <img src="asset/ice tea.jpg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Ice Tea</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">12.00 ron</h4>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="meniu1">
+                <div class="small-image">
+                    <img src="asset/freddo cappuccino.jpeg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Freddo Capuccino</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">12.00 ron</h4>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="meniu1">
+                <div class="small-image">
+                    <img src="asset/iced expresso.jpg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Ice Espresso</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">10.00 ron</h4>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="meniu1">
+                <div class="small-image">
+                    <img src="asset/f;at white.jpeg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Flat White</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">13.00 ron</h4>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="meniu1">
+                <div class="small-image">
+                    <img src="asset/long black.webp" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Long Blanck</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">7.00 ron</h4>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="meniu1">
+                <div class="small-image">
+                    <img src="asset/frappe.jpg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Frappe</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">20.00 ron</h4>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="meniu1">
+                <div class="small-image">
+                    <img src="asset/irish coffee.jpeg" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Irish Coffee</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">17.00 ron</h4>
+                </div>
+            </div>
+
+            <div data-aos="flip-left" class="meniu1">
+                <div class="small-image">
+                    <img src="asset/mochaccino.webp" alt="">
+                </div>
+                <div>
+                    <h4 data-aos="fade-left">Mochacciono</h4>
+                </div>
+                <div data-aos="fade-left" class="line"></div>
+                <div>
+                    <h4 data-aos="fade-left">13.00 ron</h4>
+                </div>
+            </div>
+        </div>
+        <div data-aos="zoom-in-down" class="meniu-link">
+            <a href="./html/meniu.html">Complete menu</a>
+        </div>
+    </div>
+    <!-- End Section for Meniu -->
+    <!-- Start section shop  using mixitup js-->
+    <main id="shop" class="shop main">
+        <h1 class="title-meniu"> Shop </h1>
+        <div class="bg-shop">
+            <div class="shop-links">
+                <div>
+                    <h2 data-aos="fade-right">products</h2>
+                </div>
+                <div class="links">
+                    <li data-aos="fade-left" data-filter="all">all</li>
+                    <li data-aos="fade-left" data-filter=".coffee">coffee</li>
+                    <li data-aos="fade-left" data-filter=".machines">machines</li>
+                </div>
+            </div>
+            <div class="product-filter-items shop-flex">
+                <div class="mix coffee shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/arabica.png" alt="">
+                        <div class="price">
+                            -30%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button1" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Arabica</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        70.00 ron
+                    </article>
+                    <span>
+                        100 ron
+                    </span>
+                </div>
+
+                <div class="mix coffee shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/tchibo_barista_caffe_crema_kilo_87563d114f2646d2.png" alt="">
+                        <div class="price">
+                            -10%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button2" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Barista</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        70.00 ron
+                    </article>
+                    <span>
+                        80 ron
+                    </span>
+                </div>
+                <div class="mix coffee shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/dallamayr.webp" alt="">
+                        <div class="price">
+                            -30%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button3" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Dallamayr</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        63.00 ron
+                    </article>
+                    <span>
+                        90 ron
+                    </span>
+                </div>
+
+                <div class="mix coffee shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/miralibazzar_1575803140.jpg" alt="">
+                        <div class="price">
+                            -25%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button4" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Lavazza</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        75.00 ron
+                    </article>
+                    <span>
+                        100 ron
+                    </span>
+                </div>
+
+                <div class="mix machines shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/m1.png" alt="">
+                        <div class="price">
+                            -25%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button5" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Krups</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        75.00 ron
+                    </article>
+                    <span>
+                        100 ron
+                    </span>
+                </div>
+
+                <div class="mix machines shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/m2.png" alt="">
+                        <div class="price">
+                            -25%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button6" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Tchibo</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        75.00 ron
+                    </article>
+                    <span>
+                        100 ron
+                    </span>
+                </div>
+
+                <div class="mix machines shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/m3.png" alt="">
+                        <div class="price">
+                            -25%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button7" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Philips</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        75.00 ron
+                    </article>
+                    <span>
+                        100 ron
+                    </span>
+                </div>
+
+                <div class="mix machines shop1">
+                    <div data-aos="zoom-in" class="shop-image">
+                        <img src="asset/m4.png" alt="">
+                        <div class="price">
+                            -25%
+                        </div>
+                        <div class="modal-shop">
+                            <button id="button8" class="button">Read more</button>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#"><i class="fas fa-share-alt"></i></a>
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <h2>Saeco</h2>
+                    <div class="stars">
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star gold"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <article>
+                        75.00 ron
+                    </article>
+                    <span>
+                        100 ron
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- start section for the part of more information about coffees -->
+    <div id="modal-parent1" class="modal-parent">
+        <div class="boox" id="box1">
+            <p id="p1">
+                Coffea arabica este considerată a fi prima specie de cafea care a fost cultivată, fiind cultivată
+                în sud-vestul Etiopiei de mai bine de 1.000 de ani.
+            </p>
+            <span id="button-close1" class="button-close" draggable="true">&times;</span>
+        </div>
+    </div>
+    <div id="modal-parent2" class="modal-parent">
+        <div class="boox" id="box2">
+            <p id="p2">
+                Tchibo Barista Espresso face parte din gama superioara a cafelelor boabe de la Tchibo. Cu o aroma
+                usor amaruie, note subtile de nuci si corp delicat, aceasta cafea 100% Arabica este prajita special pentru
+                espressoarele automate de acasa.
+            </p>
+            <span id="button-close2" class="button-close" draggable="true">&times;</span>
+        </div>
+    </div>
+    <div id="modal-parent3" class="modal-parent">
+        <div class="boox" id="box3">
+            <p id="p3">
+                Dallmayr - De la furnizorul regal la curtea bavareză la unul dintre cei mai mari operatori
+                europeni de distribuție a cafelei Alois Dallmayr, sau pe scurt Dallmayr.
+            </p>
+            <span id="button-close3" class="button-close" draggable="true">&times;</span>
+        </div>
+    </div>
+    <div id="modal-parent4" class="modal-parent">
+        <div class="boox" id="box4">
+            <p id="p4">De la cappuccino dimineața până la espresso după cină, cafeaua joacă un rol major în cultura
+                italiană. La Caffee Shop suntem mândri să îți oferim cafea italiana autentica de la Lavazza, o companie italiană de
+                cafea.
+            </p>
+            <span id="button-close4" class="button-close" draggable="true">&times;</span>
+        </div>
+    </div>
+    <div id="modal-parent5" class="modal-parent">
+        <div class="boox" id="box5">
+            <p id="p5">
+                Cu gama Krups Essential, vei descoperi dispozitive elegante, eficiente, fiabile și accesibile, care vor
+                îndeplini acest vis.
+            </p>
+            <span id="button-close5" class="button-close" draggable="true">&times;</span>
+        </div>
+    </div>
+    <!-- End section for the part of more information about coffees -->
+    <!-- End section shop  using mixitup js-->
+    <!-- Start Section Review use swiper-->
+    <section data-aos="zoom-in-down" data-aos-delay="500" data-aos-duration="2000" class="reviews" id="reviews">
+        <h1 class="title-review"> Review <span>what people says</span> </h1>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="asset/rev2.png" alt="">
+                    <h3>Christina J.</h3>
+                    <i class="fa-brands fa-facebook" style="color: #0d61f2;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #cc056f;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #0a5ceb;"></i>
+                    <i class="fa-brands fa-whatsapp" style="color: #009942;"></i>
+                    <p>
+                        This place is amazing! They offered the best coffee and showed the best attitude. Internet
+                        connection is very fast and is unlimited as well. This place is indeed perfect for studying and
+                        chilling out. It was very quiet and
+                        air-conditioned. I just want to keep coming back to this place.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="asset/rev3.png" alt="">
+                    <h3>Jeffrey G.</h3>
+                    <i class="fa-brands fa-facebook" style="color: #0d61f2;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #cc056f;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #0a5ceb;"></i>
+                    <i class="fa-brands fa-whatsapp" style="color: #009942;"></i>
+                    <p>
+                        Will go again.I only popped in to get take-away cappuccinos, but I was struck by how friendly
+                        theservice was. The cappuccinos were wonderful too! And very well priced.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="asset/rev5.png" alt="">
+                    <h3>Jeri M.</h3>
+                    <i class="fa-brands fa-facebook" style="color: #0d61f2;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #cc056f;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #0a5ceb;"></i>
+                    <i class="fa-brands fa-whatsapp" style="color: #009942;"></i>
+                    <p>
+                        This coffee shop has it all. The ambiance, interior designs, good coffee, and fast wi-fi
+                        connection. Prices are a bit high but once you already taste it, you understand why. It is simply one of the
+                        best and my favorites coffee shop in town.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="asset/rev6.png" alt="">
+                    <h3>Charlotte</h3>
+                    <i class="fa-brands fa-facebook" style="color: #0d61f2;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #cc056f;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #0a5ceb;"></i>
+                    <i class="fa-brands fa-whatsapp" style="color: #009942;"></i>
+                    <p>
+                        Amazing coffee and the owner is just wonderful. He clearly knows his stuff and they roast
+                        their own beans. Good prices, cute atmosphere.
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- End Section Review use swiper -->
+    <!-- Contact Section -->
+    <main id="contact">
+        <h1 class="title-contact"> Contact <span>Our Program</span> </h1>
+        <div class="container">
+            <div class="grid">
+                <div class="contact-info">
+                    <div class="section-intro">
+                        <h2 data-aos="fade-right" class="heading-1"><b>Location Info</b></h2>
+                    </div>
+                    <div data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000" class="map">
+                        <map>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.2448314815874!2d23.578807475393376!3d47.66023998427322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737dc60d9438d9d%3A0xda28ca9f67d9eb50!2sBarbarossa!5e0!3m2!1sro!2sro!4v1684134344897!5m2!1sro!2sro"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </map>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="section-intro">
+                        <h2 data-aos="fade-left" class="heading-1"><b>Drop us a message</b></h2>
+                    </div>
+                    <form action="#">
+                        <div data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000" class="form-group">
+                            <input type="text" class="form-input" placeholder="Trifan Danut">
+                        </div>
+                        <div data-aos="fade-up-right" data-aos-delay="450" data-aos-duration="1000" class="form-group">
+                            <input type="email" class="form-input" placeholder="example@gmail.com">
+                        </div>
+                        <div data-aos="fade-down-right" data-aos-delay="500" data-aos-duration="1000"
+                            class="form-group">
+                            <input type="number" class="form-input" placeholder="0741337492">
+                        </div>
+                        <div data-aos="fade-down-left" data-aos-delay="550" data-aos-duration="1000" class="form-group">
+                            <textarea name="" row="4" class="form-input" placeholder="Hi there....."></textarea>
+                        </div>
+                    </form>
+                    <a data-aos="flip-up" data-aos-delay="600" data-aos-duration="1000" href="#" class="btnn"><span><b>
+                                Send a Message </b></span></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div class="info">
+            <div class="info-footer">
+                <div data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000" class="box-footer">
+                    <h3>Quick Links</h3>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Home</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Meniu</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Shop</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> Review</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i> ontact</a>
+                </div>
+
+                <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="1000" class="box-footer">
+                    <h3>Contact Info</h3>
+                    <a href="#"><i class="fas fa-phone"></i> +3615289143</a>
+                    <a href="#"><i class="fas fa-phone"></i> +0742911493</a>
+                    <a href="#"><i class="fas fa-envelope"></i> coffee@shop.com</a>
+                    <a href="#"><i class="fas fa-envelope"></i> coffeeshop@gmail.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Adresa Piata Libertatii Zona Centru Vechi, Strada
+                        Dacia, Baia Mare 430321</a>
+                </div>
+
+                <div data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="1000" class="box-footer">
+                    <h3>Follo Us</h3>
+                    <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="#"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- js -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Mixitup JS -->
+    <script src="mixitup.min.js"></script>
+    <!-- Aos JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="scrip.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>
